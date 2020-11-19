@@ -7,16 +7,13 @@
 
         <link href="/src/assets/styles/tailwind/tailwind.css" rel="stylesheet">
 
-        <title>Elementy PHP</title>
+        <title>Funkcje</title>
     </head>
     <body>
         <div class="flex relative w-full justify-center">
             <div class="flex flex-wrap w-1/2 justify-center">
                 <?php
-                    include 'src/zmienne.php';
-                    include 'src/operatory.php';
-                    include 'src/warunki.php';
-                    include 'src/petle.php';
+                    include 'src/funkcje.php';
                 ?>
             </div>
         </div>
