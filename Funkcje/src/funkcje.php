@@ -30,13 +30,18 @@
     function funkcjaZNieznanaLiczbaArgumentow() {
       $numargs = func_num_args();
       $counter = 1;
-      for ($i = 0; $i < $numargs; $i++) {
-        echo 'Arg ' . $counter . ': ' . func_get_arg($i) . '</br>';
-        $counter++;
+      if ($numargs == 2) {
+        for ($i = 0; $i < $numargs; $i++) {
+          echo 'Arg ' . $counter . ': ' . func_get_arg($i) . '</br>';
+          $counter++;
+        }
+      } else {
+        echo "Liczba argumentów nie może być większa od 2!";
       }
     }
 
     funkcjaZNieznanaLiczbaArgumentow("Jabłko", "Gruszka", "Banan");
+    funkcjaZNieznanaLiczbaArgumentow("Jabłko", "Gruszka");
 
   ?>
 </div>
