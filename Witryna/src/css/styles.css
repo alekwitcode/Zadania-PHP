@@ -2,6 +2,26 @@ html {
     background-color: aliceblue;
 }
 
+@media screen and (max-width: 550px) { 
+    .row-wrapper {
+        flex-direction: column !important;
+        margin: auto !important;
+    }
+
+    .form-wrapper {
+        flex: 1 !important;
+    }
+
+    .text-wrapper {
+        flex-direction: column !important;
+        margin: auto !important;
+    }
+
+    .text-div {
+        flex: 1 !important;
+        min-width: 60vw;
+    }
+}
 .row-wrapper {
     display: flex;
     flex-direction: row;
@@ -43,9 +63,8 @@ html {
     flex-direction: column;
     flex: 0.4;
     margin: auto;
-    box-shadow: 3px 5px 5px #888888;
-    margin: auto;
     padding: 2rem;
+    box-shadow: 3px 5px 5px #888888;
     text-align: center;
     background-color: white;
 }
