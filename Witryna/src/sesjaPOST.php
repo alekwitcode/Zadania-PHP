@@ -1,5 +1,4 @@
 <?php 
-    session_start();
     if($_POST['send-nazwisko']) {
         $nazwisko = $_REQUEST['nazwisko'];
         $_SESSION['nazwisko'] = $nazwisko;

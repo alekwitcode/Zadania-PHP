@@ -48,7 +48,7 @@
         <form action="/src/ciasteczkoPOST.php" method="POST">
             <h4 class="form-title">Ciasteczko</h4>
             <label for="imie"><b>Imie: </b></label></br>
-            <input type="text" id="imie" name="imie"></imput></br></br>
+            <input type="text" id="imie" name="imie"></input></br></br>
             <div class="send-wrapper">    
                 <input type="submit" class="send" id="submitCookiePOST" value="Send-imie" name="send-imie">
             </div> 
@@ -58,7 +58,7 @@
         <form action="/src/sesjaPOST.php" method="POST">
             <h4 class="form-title">Sesja</h4>
             <label for="nazwisko"><b>Nazwisko: </b></label></br>
-            <input type="text" id="nazwisko" name="nazwisko"></imput></br></br>
+            <input type="text" id="nazwisko" name="nazwisko"></input></br></br>
             <div class="send-wrapper">
                 <input type="submit" class="send" id="submitSessionPOST" value="Send-nazwisko" name="send-nazwisko">
             </div>
@@ -71,17 +71,10 @@
 <div class="text-wrapper">
     <div class="text-div">
         <p> 
-            <b>Ciasteczko: </b>  
-            <?php include 'src/ciasteczko.php'; ?>
-        </p>
-
-        <p>
-            Z jakiegoś powodu ciasteczko zapisuje się tylko 
-            na pliku ciasteczkoPOST.php i jego wartość nie 
-            przechodzi do index.php. Myślałem że może to być 
-            wina robienia tego lokalnie ponieważ Ciasteczka 
-            odmawiają zapisywania gdy w adresie są mniej niż 
-            2 kropki ale na replu sytuacja się powtarza.
+            <b>Ciasteczko dla klucza "imie" to: </b>  
+            <?php
+                include 'src/ciasteczko.php';
+            ?>
         </p>
     </div>
 
@@ -89,10 +82,9 @@
 
     <div class="text-div">
         <p>
-            <b>Wartość Sesji dla klucza "nazwisko" to: </b>
+            <b>Sesja dla klucza "nazwisko" to: </b>
             <?php
                 session_start(); 
-                include 'sesjaPOST.php';
                 include 'src/sesja.php';
             ?>
         </p>
