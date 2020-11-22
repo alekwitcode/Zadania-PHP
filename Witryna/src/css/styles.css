@@ -1,5 +1,6 @@
-html {
+html, body {
     background-color: aliceblue;
+    width: 100vw;
 }
 
 @media screen and (max-width: 550px) { 
@@ -22,6 +23,12 @@ html {
         min-width: 60vw;
     }
 }
+.title {
+    padding: 10px 0 20px 0;
+    text-align: center;
+    margin: auto;
+}
+
 .row-wrapper {
     display: flex;
     flex-direction: row;

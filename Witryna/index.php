@@ -10,7 +10,7 @@
   <title>Składowe witryny</title>
 </head>
 <body>
-    <h1 style="text-align: center"> Składowe witryny </h1>
+    <h1 class="title"> Składowe witryny </h1>
 <div class="row-wrapper">
     <div class="form-wrapper">
         <form action="/src/potwierdzenieGET.php" method="GET">
